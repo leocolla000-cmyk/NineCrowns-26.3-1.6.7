@@ -1,0 +1,29 @@
+AUDIT NINE CROWNS 1.6.7 — Minecraft 26.3
+
+Controlli/fix inseriti:
+- EntityTypes.LIGHTNING_BOLT per l'API 26.3.
+- Java 25.
+- Gradle 9.6.0 nel workflow + Fabric Loom 1.17.14.
+- Fabric Loader 0.19.5 e Fabric API 0.161.0+26.3.
+- Workflow aggiornato davvero a 1.6.7 e ricerca automatica della cartella progetto.
+- Verifica finale del remapJar (il JAR Fabric giocabile), non del solo development JAR.
+- 9 giocatori registrati / 8 teste diverse degli altri 8.
+- propria testa rifiutata; teste duplicate rifiutate.
+- ricette leggendarie 3x3 originali: 8 teste attorno all'oggetto centrale.
+- una sola copia CRAFTABILE per OP Sword / OP Spear / Emperor Crown.
+- lock atomico del primo craft + blocco di result preview stale.
+- Crafter automatico vanilla bloccato per le tre ricette leggendarie per evitare bypass senza identita giocatore.
+- rimosso un hook non necessario sui crafting remainder: le ricette vanilla consumano gia tutte le 9 componenti.
+- vecchie config vengono normalizzate ai valori 1.6.7.
+- OP Sword: Sharpness V, indistruttibile, 14 raw totali (+1,5 cuori vs Netherite Sword Sharpness V).
+- OP Sword: Poison I 20%/3 s e Slowness I 10%/3 s.
+- OP Spear: Sharpness V + Lunge III, indistruttibile.
+- jab Spear: 10 raw totali con Sharpness V = 5 cuori prima di armatura/protezioni.
+- speciale Spear: 3 fulmini visuali, 12 raw totali = 6 cuori, cooldown globale 30 s.
+- fulmini visual-only: niente fuoco; danno applicato una sola volta come playerAttack normale.
+- Emperor Crown: Protection X, Speed II, Strength II, Fire Resistance I, indistruttibile.
+- salvataggio world data con file temporaneo + sostituzione atomica quando supportata.
+- recipe JSON presenti per JEI/recipe display; validazione reale resta server-side.
+- texture e modelli confrontati byte-per-byte/SHA-256 con la 1.6.3: non modificati.
+- nessun String Duper e nessun dupe generico.
+- tutti i JSON vengono ricontrollati prima del pacchetto finale.

@@ -1,0 +1,19 @@
+NINE CROWNS 1.6.7 - BUILD FIX
+
+Errore corretto:
+Task with name 'remapJar' not found
+
+Causa:
+la 1.6.4 aveva aggiunto un task Gradle personalizzato (verifyModJar)
+che cercava remapJar durante la configurazione del progetto.
+
+Correzione:
+- rimosso completamente verifyModJar dal build.gradle;
+- la build ora usa il normale task 'build' di Fabric Loom;
+- il controllo del JAR avviene DOPO la build dentro GitHub Actions;
+- Loom 1.17.14;
+- Gradle 9.6.0;
+- Java 25;
+- Minecraft 26.3.
+
+Il codice e gli asset della mod non sono stati modificati da questa correzione.

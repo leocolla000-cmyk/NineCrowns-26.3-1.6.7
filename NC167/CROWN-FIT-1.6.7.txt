@@ -1,0 +1,13 @@
+NINE CROWNS 1.6.7 — EMPEROR CROWN
+
+Modifica visiva:
+- stessa geometria 3D
+- stessi materiali: oro, diamante, smeraldo
+- stessa scala 0.82
+- stessa rotazione frontale 0°
+- posizione verticale: Y 10.0 -> Y 4.5
+
+La corona viene quindi indossata attorno alla parte superiore della testa,
+senza restare appoggiata sopra e senza sparire dentro la testa.
+
+Minecraft 26.3

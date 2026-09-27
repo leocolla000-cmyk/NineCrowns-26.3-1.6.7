@@ -1,0 +1,28 @@
+NINE CROWNS 1.6.7 — COME COMPILARLA SU GITHUB
+
+METODO PIU SICURO
+1. Estrai NC164.zip.
+2. Nel repository GitHub carica IL CONTENUTO della cartella estratta nella ROOT.
+3. Nella ROOT del repository devono esserci almeno:
+   .github/
+   src/
+   build.gradle
+   settings.gradle
+   gradle.properties
+4. Controlla che esista esattamente:
+   .github/workflows/main.yml
+5. Vai su GitHub -> Actions -> Build NineCrowns 1.6.7 -> Run workflow.
+6. Nel log devono comparire:
+   Java 25
+   Gradle 9.6.0
+   Fabric Loom 1.17.14
+7. Se la build e verde, scarica l'Artifact:
+   NineCrowns-26.3-v1.6.7-VERIFIED
+8. Dentro trovi il JAR giocabile:
+   ninecrowns-26.3-1.6.7.jar
+
+IMPORTANTE
+GitHub esegue i workflow SOLO da .github/workflows nella ROOT del repository.
+Se carichi tutto dentro una cartella tipo NC164/, il workflow interno non parte da solo.
+Per questo nel pacchetto c'e anche una copia comoda chiamata main.yml:
+copiala nella .github/workflows/ della ROOT del repository.

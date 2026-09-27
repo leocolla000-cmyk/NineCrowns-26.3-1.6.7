@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "ninecrowns_legendary",
+  "pattern": [
+    "HHH",
+    "HSH",
+    "HHH"
+  ],
+  "key": {
+    "H": "minecraft:player_head",
+    "S": "minecraft:netherite_spear"
+  },
+  "result": {
+    "id": "ninecrowns:op_spear",
+    "count": 1
+  }
+}

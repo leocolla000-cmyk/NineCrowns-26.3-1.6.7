@@ -1,0 +1,24 @@
+NINE CROWNS 1.6.7 — STATIC AUDIT RESULT
+
+136 controlli statici eseguiti: 136 OK, 0 FAIL.
+
+Controllato:
+- struttura progetto e workflow
+- tutti i JSON
+- YAML GitHub Actions
+- integrita PNG
+- texture/modelli identici byte-per-byte alla 1.6.3
+- ricette 8 teste / 9 giocatori
+- propria testa e duplicati rifiutati
+- una sola copia craftabile dei tre leggendari
+- valori Sword/Spear/Crown
+- fulmini 26.3 con EntityTypes.LIGHTNING_BOLT
+- cooldown globale 30 secondi
+- blocco Crafter automatico
+- controlli anti-result-stale
+- assenza String Duper / dupe generico
+- build 1.6.7 / MC 26.3 / Java 25 / Loom 1.17.14 / Gradle 9.6.0
+- verifica del remapJar giocabile
+
+Nota: la compilazione completa con dipendenze Minecraft/Fabric viene eseguita da GitHub Actions;
+il workflow incluso interrompe la build se sorgenti, risorse o JAR finale non superano i controlli.
